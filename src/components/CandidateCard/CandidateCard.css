@@ -1,0 +1,111 @@
+.candidate-card {
+  position: relative;
+  padding: 28px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.candidate-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.candidate-card.is-selected {
+  border-color: var(--gold-500);
+  box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.18), var(--shadow-card-hover);
+}
+
+.candidate-rank {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--teal-600);
+  background: var(--paper-100);
+  padding: 3px 9px;
+  border-radius: 999px;
+}
+
+.candidate-photo-wrap {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--paper-100);
+  margin-bottom: 16px;
+  background: var(--paper-100);
+}
+
+.candidate-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.candidate-name {
+  font-size: 1.15rem;
+  margin-bottom: 4px;
+}
+
+.candidate-position {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--teal-600);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.candidate-meta {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 14px;
+  width: 100%;
+  justify-content: center;
+}
+
+.candidate-meta dt {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-400);
+  margin-bottom: 3px;
+}
+
+.candidate-meta dd {
+  margin: 0;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--ink-900);
+}
+
+.candidate-manifesto {
+  font-size: 0.88rem;
+  color: var(--ink-600);
+  margin-bottom: 16px;
+  min-height: 62px;
+}
+
+.candidate-votes {
+  font-size: 0.85rem;
+  color: var(--ink-600);
+  margin-bottom: 16px;
+}
+
+.candidate-votes span {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--navy-900);
+  font-size: 1.1rem;
+  margin-right: 4px;
+}
+
+.candidate-vote-btn {
+  width: 100%;
+}

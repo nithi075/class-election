@@ -1,0 +1,116 @@
+.auth-page {
+  min-height: calc(100vh - 76px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, var(--paper-100) 0%, var(--paper-50) 70%);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 36px 34px;
+  text-align: center;
+}
+
+.auth-seal {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--gold-100);
+  color: var(--gold-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+
+.auth-title {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.auth-sub {
+  margin-bottom: 26px;
+  font-size: 0.92rem;
+}
+
+.role-toggle {
+  display: flex;
+  background: var(--paper-100);
+  border-radius: 999px;
+  padding: 4px;
+  margin-bottom: 26px;
+}
+
+.role-toggle button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 999px;
+  color: var(--ink-600);
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.role-toggle button.active {
+  background: var(--navy-900);
+  color: var(--paper-50);
+  box-shadow: 0 4px 12px rgba(22, 35, 63, 0.25);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: left;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-600);
+}
+
+.field input,
+.field select {
+  border: 1.5px solid var(--paper-200);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  font-size: 0.94rem;
+  font-family: var(--font-body);
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field input:focus,
+.field select:focus {
+  outline: none;
+  border-color: var(--teal-600);
+  box-shadow: 0 0 0 3px rgba(31, 111, 107, 0.14);
+}
+
+.auth-submit {
+  margin-top: 8px;
+  width: 100%;
+  letter-spacing: 0.04em;
+}
+
+.auth-footnote {
+  margin-top: 22px;
+  font-size: 0.86rem;
+}
+
+.auth-footnote a {
+  color: var(--teal-600);
+  font-weight: 600;
+}
