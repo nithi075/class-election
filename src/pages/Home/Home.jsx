@@ -45,8 +45,8 @@ function Home() {
           <div className="hero-copy rise-in">
             <span className="eyebrow">Classroom Election Portal</span>
             <h1 className="hero-title">
-              Smart Classroom <br />
-              <span className="hero-title-accent">E-Voting System</span>
+              Online Voting <br />
+              <span className="hero-title-accent">System</span>
             </h1>
             <p className="hero-sub">
               A digital ballot box for your classroom — register, review candidates, vote once,

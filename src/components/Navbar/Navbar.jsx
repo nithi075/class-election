@@ -24,7 +24,7 @@ function Navbar() {
             </svg>
           </span>
           <span className="brand-text">
-            Smart Classroom <em>E-Voting</em>
+            Online Voting <em>System</em>
           </span>
         </NavLink>
 

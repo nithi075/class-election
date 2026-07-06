@@ -1,85 +1,99 @@
 // Static dummy data powering the entire frontend showcase.
 // No backend / API calls — everything here is local, in-memory data.
 
+import nithishImg from '../assets/roshini.jpg'
+import sivaaniskaImg from '../assets/sivaanishka.jpeg'
+import vinothaImg from '../assets/vinotha.jpg'
+import suregaImg from '../assets/surega.jpg'
+import soundaryaImg from '../assets/soundarya.jpg'
+import rohiniImg from '../assets/roshini.jpg'
+
+
 export const currentStudent = {
-  name: 'Nithish Kumar',
+  name: 'Nithish ',
   rollNumber: 'BCS-2024-041',
   department: 'B.Sc Computer Science',
   year: '3rd Year',
   email: 'nithish@college.edu',
-  photo:
-    'https://api.dicebear.com/7.x/notionists/svg?seed=Nithish&backgroundColor=f3e6bd',
+  photo: nithishImg,
 }
+
 
 export const candidates = [
   {
     id: 'c1',
-    name: 'Arun Kumar',
+    name: 'Sivaaniska',
     rollNumber: 'BCS-2024-012',
     department: 'B.Sc Computer Science',
     position: 'Class Representative',
     manifesto:
-      'Focused on improving classroom communication, organizing coding sessions, and helping students with academic activities.',
+      'Focused on improving communication between students and faculty, organizing academic activities and department events.',
     votes: 45,
-    photo:
-      'https://api.dicebear.com/7.x/notionists/svg?seed=Arun&backgroundColor=e7e0cf',
+    photo: sivaaniskaImg,
   },
+
   {
     id: 'c2',
-    name: 'Kavya S',
+    name: 'Vinotha',
     rollNumber: 'BCS-2024-027',
     department: 'B.Sc Computer Science',
     position: 'Class Representative',
     manifesto:
-      'Plans to conduct weekly programming practice sessions, group discussions, and improve student participation.',
+      'Plans to conduct programming sessions, group activities and improve student participation.',
     votes: 38,
-    photo:
-      'https://api.dicebear.com/7.x/notionists/svg?seed=Kavya&backgroundColor=f3e6bd',
+    photo: vinothaImg,
   },
+
   {
     id: 'c3',
-    name: 'Vignesh Raj',
+    name: 'Surega',
     rollNumber: 'BCS-2024-019',
     department: 'B.Sc Computer Science',
-    position: 'Event Coordinator',
+    position: 'Class Representative',
     manifesto:
-      'Wants to organize technical events, coding competitions, workshops, and department activities.',
+      'Interested in organizing workshops, technical events and skill development programs.',
     votes: 29,
-    photo:
-      'https://api.dicebear.com/7.x/notionists/svg?seed=Vignesh&backgroundColor=e7e0cf',
+    photo: suregaImg,
   },
+
   {
     id: 'c4',
-    name: 'Priyadharshini M',
+    name: 'Soundarya',
     rollNumber: 'BCS-2024-008',
     department: 'B.Sc Computer Science',
-    position: 'Event Coordinator',
+    position: 'Class Representative',
     manifesto:
-      'Focused on arranging seminars, student interaction programs, and skill development events.',
+      'Focused on student interaction, seminars and improving department activities.',
     votes: 22,
-    photo:
-      'https://api.dicebear.com/7.x/notionists/svg?seed=Priya&backgroundColor=f3e6bd',
+    photo: soundaryaImg,
+  },
+
+  {
+    id: 'c5',
+    name: 'Rohini',
+    rollNumber: 'BCS-2024-015',
+    department: 'B.Sc Computer Science',
+    position: 'Class Representative',
+    manifesto:
+      'Aims to encourage teamwork, communication and student involvement.',
+    votes: 18,
+    photo: rohiniImg,
   },
 ]
+
 
 export const elections = [
   {
     id: 'e1',
-    title: 'B.Sc Computer Science Class Representative Election 2026',
+    title:
+      'B.Sc Computer Science Class Representative Election 2026',
     department: 'B.Sc Computer Science',
     status: 'Active',
     endsOn: '2026-07-12',
     positions: ['Class Representative'],
   },
-  {
-    id: 'e2',
-    title: 'Department Event Coordinator Election 2026',
-    department: 'B.Sc Computer Science',
-    status: 'Active',
-    endsOn: '2026-07-15',
-    positions: ['Event Coordinator'],
-  },
 ]
+
 
 export const feedbackEntries = [
   {
@@ -89,6 +103,7 @@ export const feedbackEntries = [
     comment:
       'The online voting system was simple and very easy to use.',
   },
+
   {
     id: 'f2',
     name: 'Meena K',
@@ -98,20 +113,30 @@ export const feedbackEntries = [
   },
 ]
 
+
 export const studentStats = {
-  totalElections: 2,
+  totalElections: elections.length,
   votingStatus: 'Completed',
   candidatesAvailable: candidates.length,
   resultsDeclared: 0,
 }
 
+
 export const adminStats = {
   totalStudents: 58,
+
   totalCandidates: candidates.length,
-  totalVotes: candidates.reduce((sum, c) => sum + c.votes, 0),
-  activeElections:
-    elections.filter((e) => e.status === 'Active').length,
+
+  totalVotes: candidates.reduce(
+    (sum, candidate) => sum + candidate.votes,
+    0
+  ),
+
+  activeElections: elections.filter(
+    election => election.status === 'Active'
+  ).length,
 }
+
 
 export const allStudents = [
   {
@@ -121,6 +146,7 @@ export const allStudents = [
     dept: 'B.Sc CS',
     status: 'Voted',
   },
+
   {
     id: 's2',
     name: 'Santhosh R',
@@ -128,6 +154,7 @@ export const allStudents = [
     dept: 'B.Sc CS',
     status: 'Voted',
   },
+
   {
     id: 's3',
     name: 'Meena K',
@@ -135,6 +162,7 @@ export const allStudents = [
     dept: 'B.Sc CS',
     status: 'Pending',
   },
+
   {
     id: 's4',
     name: 'Hari Prasad',
@@ -142,6 +170,7 @@ export const allStudents = [
     dept: 'B.Sc CS',
     status: 'Voted',
   },
+
   {
     id: 's5',
     name: 'Janani S',

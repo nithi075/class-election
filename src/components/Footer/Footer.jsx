@@ -13,7 +13,7 @@ function Footer() {
             </svg>
           </span>
           <div>
-            <p className="footer-title">Smart Classroom E-Voting System</p>
+            <p className="footer-title">Online Voting System</p>
             <p className="footer-tag">Every vote counted. Every result trusted.</p>
           </div>
         </div>
